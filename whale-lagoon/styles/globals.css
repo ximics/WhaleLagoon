@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Montserrat'; /* Nombre de la fuente */
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,300;0,400;1,400&display=swap') format('truetype'); /* Ruta a tu archivo de fuente */
+    /* Otros atributos de la fuente, como weight y style, pueden ir aquí */
+  }
+
+.fuente{
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 100;
+
+}
+@media (max-width: 640px) {
+    /* Reducir el tamaño de fuente para dispositivos móviles */
+    .fuente {
+      font-size: 1.6rem; /* Ajusta el tamaño de fuente según tus preferencias */
+    }
+  }
+
+.titulo{
+    font-size: 3.7rem;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    background-image: linear-gradient(135deg, white 0%, white 100%);
+
+
+}
+
+
+.backCoral{
+
+    background-image: url(/images/Fondo1.png); 
+    background-size: cover;
+    
+    
+
+}
+.position-image{
+    width: 100%;
+    display: block;
+}
+
+main{
+    background: linear-gradient(135deg, #08a7f6 0%, #080343 100%);
+    font-weight: 200;   
+}
+.backOlas{
+    background-image: url(/images/ballenasTitulo.png); 
+    background-size: 87% 98%;
+    height: 70vh;
+    background-position: center center;
+}
+@media (max-width: 768px) {
+    .backOlas {
+      background-size: 160% 80%; /* Ajusta el tamaño de fondo para dispositivos móviles según tus preferencias */
+      height: 60vh;
+    }
+  }
+.backPeces{
+    background-image: url(/images/pecesFondo2.jpg); 
+    background-size: 90% 100%;
+
+}
+
